@@ -16,6 +16,7 @@
 		3372A965206B93FD00E3332B /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A964206B93FD00E3332B /* TransportType.swift */; };
 		3372A967206B944500E3332B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A966206B944500E3332B /* Line.swift */; };
 		3372A969206B946E00E3332B /* TransportNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A968206B946E00E3332B /* TransportNetwork.swift */; };
+		33A0F00A206D0F2200C76DF9 /* LinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3372A964206B93FD00E3332B /* TransportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
 		3372A966206B944500E3332B /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		3372A968206B946E00E3332B /* TransportNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportNetwork.swift; sourceTree = "<group>"; };
+		33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		3372A94F206A77EB00E3332B /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
+				33A0F008206D0E6100C76DF9 /* ViewControllers */,
 				3372A950206A77EB00E3332B /* AppDelegate.swift */,
 				3372A952206A77EB00E3332B /* ViewController.swift */,
 				3372A954206A77EB00E3332B /* Main.storyboard */,
@@ -82,6 +85,14 @@
 				3372A968206B946E00E3332B /* TransportNetwork.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33A0F008206D0E6100C76DF9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				3372A965206B93FD00E3332B /* TransportType.swift in Sources */,
 				3372A951206A77EB00E3332B /* AppDelegate.swift in Sources */,
 				3372A963206B939500E3332B /* Stop.swift in Sources */,
+				33A0F00A206D0F2200C76DF9 /* LinesTableViewController.swift in Sources */,
 				3372A969206B946E00E3332B /* TransportNetwork.swift in Sources */,
 				3372A967206B944500E3332B /* Line.swift in Sources */,
 			);

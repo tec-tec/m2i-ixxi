@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     @IBAction func cancel(_ sender: Any) {
 
         dismiss(animated: true) {
+            
             print("Dismissed")
         }
     }

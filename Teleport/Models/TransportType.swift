@@ -47,4 +47,17 @@ enum TransportType {
             return "Train"
         }
     }
+
+    var imageName: String {
+        switch self {
+        case .bus:
+            return "bus"
+        case .tram:
+            return "tram"
+        case .metro:
+            return "metro"
+        case .train:
+            return "train"
+        }
+    }
 }
