@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -537,7 +538,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ER0-oj-L05" kind="show" id="VDe-el-gGN"/>
+                                    <segue destination="ER0-oj-L05" kind="show" identifier="goStops" id="VDe-el-gGN">
+                                        <segue key="commit" inheritsFrom="parent" id="c4W-HA-gG4"/>
+                                        <segue key="preview" inheritsFrom="commit" id="yam-zu-aQk"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
