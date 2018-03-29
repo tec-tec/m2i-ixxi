@@ -17,6 +17,7 @@
 		3372A967206B944500E3332B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A966206B944500E3332B /* Line.swift */; };
 		3372A969206B946E00E3332B /* TransportNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A968206B946E00E3332B /* TransportNetwork.swift */; };
 		33A0F00A206D0F2200C76DF9 /* LinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */; };
+		33A0F00C206D328400C76DF9 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A0F00B206D328400C76DF9 /* StopsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3372A966206B944500E3332B /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		3372A968206B946E00E3332B /* TransportNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportNetwork.swift; sourceTree = "<group>"; };
 		33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTableViewController.swift; sourceTree = "<group>"; };
+		33A0F00B206D328400C76DF9 /* StopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				33A0F009206D0F2200C76DF9 /* LinesTableViewController.swift */,
+				33A0F00B206D328400C76DF9 /* StopsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3372A953206A77EB00E3332B /* ViewController.swift in Sources */,
+				33A0F00C206D328400C76DF9 /* StopsViewController.swift in Sources */,
 				3372A965206B93FD00E3332B /* TransportType.swift in Sources */,
 				3372A951206A77EB00E3332B /* AppDelegate.swift in Sources */,
 				3372A963206B939500E3332B /* Stop.swift in Sources */,

@@ -73,8 +73,9 @@ class LinesTableViewController: UITableViewController {
             guard let indexPath = tableView.indexPath(for: cell) else { return }
             let line = network.allLines[indexPath.row]
 
-            let destination = segue.destination
-            destination.title = line.name
+            guard let destination = segue.destination as? StopsViewController else { return }
+            destination.currentLine = line
+
         }
     }
 
