@@ -33,6 +33,10 @@ class ViewController: UIViewController {
     //MARK: - Actions
 
     @IBAction func cancel(_ sender: Any) {
+
+        dismiss(animated: true) {
+            print("Dismissed")
+        }
     }
 
     @IBAction func save(_ sender: Any) {
@@ -60,14 +64,17 @@ class ViewController: UIViewController {
 
     private func configureUI() {
 
-        addStopButton.isEnabled = false
+//        addStopButton.isEnabled = false
         configureSegmentedControl()
+
+        navigationController?.navigationBar.barTintColor = .yellow
     }
 
     private func configureSegmentedControl() {
         typeSegmentedControl.removeAllSegments()
         for type in TransportType.allTypes {
             typeSegmentedControl.insertSegment(withTitle: type.stringValue, at: typeSegmentedControl.numberOfSegments, animated: false)
+
         }
         typeSegmentedControl.selectedSegmentIndex = 0
     }
