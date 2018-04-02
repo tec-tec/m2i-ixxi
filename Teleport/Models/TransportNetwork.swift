@@ -6,7 +6,9 @@
 //  Copyright © 2018 TecTec. All rights reserved.
 //
 
-class TransportNetwork {
+import Foundation
+
+class TransportNetwork: Codable {
 
     private var lines: Set<Line>
 
@@ -14,6 +16,25 @@ class TransportNetwork {
         return lines.sorted(by: { (l1, l2) -> Bool in
             l1.number < l2.number
         })
+    }
+
+    var jsonValue: Data? {
+        let encoder = JSONEncoder()
+        let encodedData = try? encoder.encode(self)
+
+//        do {
+//            try encoder.encode(self)
+//        } catch  {
+//            error.localizedDescription
+//        }
+
+        if let data = encodedData {
+            print(data)
+            let str = String(data: data, encoding: .utf8)
+            print(str!)
+        }
+
+        return encodedData
     }
 
     init(demoData: Bool = false) {
@@ -49,7 +70,7 @@ class TransportNetwork {
     }
 
 
-    ///Add a new line in the network, if the line is not alerady in
+    ///Add a new line in the network, if the line is not already in
     @discardableResult func insert(_ line: Line) -> Bool {
         return lines.insert(line).inserted
     }
@@ -57,6 +78,14 @@ class TransportNetwork {
     func remove(_ line: Line) -> Line? {
         return lines.remove(line)
     }
+
+    func replaceLines(with data: Data) {
+        let decoder = JSONDecoder()
+        if let network = try? decoder.decode(TransportNetwork.self, from: data) {
+            lines = network.lines
+        }
+    }
+
 }
 
 extension TransportNetwork: CustomStringConvertible {

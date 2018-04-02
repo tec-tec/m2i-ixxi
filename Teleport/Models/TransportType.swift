@@ -6,7 +6,26 @@
 //  Copyright © 2018 TecTec. All rights reserved.
 //
 
-enum TransportType {
+enum TransportType: Codable {
+
+    enum CodingKeys: String, CodingKey {
+        case type
+        case capacity
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.stringValue, forKey: CodingKeys.type)
+        try container.encode(0, forKey: CodingKeys.capacity)
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let typeString = try container.decode(String.self, forKey: .type)
+        let capacity = try container.decode(Int.self, forKey: .type)
+        self = TransportType(type: typeString, capacity: capacity)!
+    }
+
     case bus(capacity: Int)
     case tram(capacity: Int)
     case metro(capacity: Int)

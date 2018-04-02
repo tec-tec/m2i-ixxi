@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332970ED206E863C00D602B2 /* TeleportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332970EC206E863C00D602B2 /* TeleportUITests.swift */; };
+		332970FB206E88BB00D602B2 /* TeleportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332970FA206E88BB00D602B2 /* TeleportTests.swift */; };
 		3372A951206A77EB00E3332B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A950206A77EB00E3332B /* AppDelegate.swift */; };
 		3372A953206A77EB00E3332B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A952206A77EB00E3332B /* ViewController.swift */; };
 		3372A956206A77EB00E3332B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3372A954206A77EB00E3332B /* Main.storyboard */; };
@@ -20,7 +22,30 @@
 		33A0F00C206D328400C76DF9 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A0F00B206D328400C76DF9 /* StopsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		332970EF206E863C00D602B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3372A945206A77EB00E3332B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3372A94C206A77EB00E3332B;
+			remoteInfo = Teleport;
+		};
+		332970FD206E88BB00D602B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3372A945206A77EB00E3332B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3372A94C206A77EB00E3332B;
+			remoteInfo = Teleport;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		332970EA206E863C00D602B2 /* TeleportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		332970EC206E863C00D602B2 /* TeleportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportUITests.swift; sourceTree = "<group>"; };
+		332970EE206E863C00D602B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332970F8206E88BA00D602B2 /* TeleportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		332970FA206E88BB00D602B2 /* TeleportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportTests.swift; sourceTree = "<group>"; };
+		332970FC206E88BB00D602B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3372A94D206A77EB00E3332B /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3372A950206A77EB00E3332B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3372A952206A77EB00E3332B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +62,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		332970E7206E863C00D602B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332970F5206E88BA00D602B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3372A94A206A77EB00E3332B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		332970EB206E863C00D602B2 /* TeleportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				332970EC206E863C00D602B2 /* TeleportUITests.swift */,
+				332970EE206E863C00D602B2 /* Info.plist */,
+			);
+			path = TeleportUITests;
+			sourceTree = "<group>";
+		};
+		332970F9206E88BB00D602B2 /* TeleportTests */ = {
+			isa = PBXGroup;
+			children = (
+				332970FA206E88BB00D602B2 /* TeleportTests.swift */,
+				332970FC206E88BB00D602B2 /* Info.plist */,
+			);
+			path = TeleportTests;
+			sourceTree = "<group>";
+		};
 		3372A944206A77EB00E3332B = {
 			isa = PBXGroup;
 			children = (
 				3372A94F206A77EB00E3332B /* Teleport */,
+				332970EB206E863C00D602B2 /* TeleportUITests */,
+				332970F9206E88BB00D602B2 /* TeleportTests */,
 				3372A94E206A77EB00E3332B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				3372A94D206A77EB00E3332B /* Teleport.app */,
+				332970EA206E863C00D602B2 /* TeleportUITests.xctest */,
+				332970F8206E88BA00D602B2 /* TeleportTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +162,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		332970E9206E863C00D602B2 /* TeleportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332970F3206E863C00D602B2 /* Build configuration list for PBXNativeTarget "TeleportUITests" */;
+			buildPhases = (
+				332970E6206E863C00D602B2 /* Sources */,
+				332970E7206E863C00D602B2 /* Frameworks */,
+				332970E8206E863C00D602B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332970F0206E863C00D602B2 /* PBXTargetDependency */,
+			);
+			name = TeleportUITests;
+			productName = TeleportUITests;
+			productReference = 332970EA206E863C00D602B2 /* TeleportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		332970F7206E88BA00D602B2 /* TeleportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332970FF206E88BB00D602B2 /* Build configuration list for PBXNativeTarget "TeleportTests" */;
+			buildPhases = (
+				332970F4206E88BA00D602B2 /* Sources */,
+				332970F5206E88BA00D602B2 /* Frameworks */,
+				332970F6206E88BA00D602B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332970FE206E88BB00D602B2 /* PBXTargetDependency */,
+			);
+			name = TeleportTests;
+			productName = TeleportTests;
+			productReference = 332970F8206E88BA00D602B2 /* TeleportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3372A94C206A77EB00E3332B /* Teleport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3372A95F206A77EB00E3332B /* Build configuration list for PBXNativeTarget "Teleport" */;
@@ -124,10 +221,20 @@
 		3372A945206A77EB00E3332B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = TecTec;
 				TargetAttributes = {
+					332970E9206E863C00D602B2 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3372A94C206A77EB00E3332B;
+					};
+					332970F7206E88BA00D602B2 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3372A94C206A77EB00E3332B;
+					};
 					3372A94C206A77EB00E3332B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -148,11 +255,27 @@
 			projectRoot = "";
 			targets = (
 				3372A94C206A77EB00E3332B /* Teleport */,
+				332970E9206E863C00D602B2 /* TeleportUITests */,
+				332970F7206E88BA00D602B2 /* TeleportTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		332970E8206E863C00D602B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332970F6206E88BA00D602B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3372A94B206A77EB00E3332B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +289,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		332970E6206E863C00D602B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332970ED206E863C00D602B2 /* TeleportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332970F4206E88BA00D602B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332970FB206E88BB00D602B2 /* TeleportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3372A949206A77EB00E3332B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +321,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332970F0206E863C00D602B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3372A94C206A77EB00E3332B /* Teleport */;
+			targetProxy = 332970EF206E863C00D602B2 /* PBXContainerItemProxy */;
+		};
+		332970FE206E88BB00D602B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3372A94C206A77EB00E3332B /* Teleport */;
+			targetProxy = 332970FD206E88BB00D602B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3372A954206A77EB00E3332B /* Main.storyboard */ = {
@@ -203,6 +355,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		332970F1206E863C00D602B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = TeleportUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.TeleportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleport;
+			};
+			name = Debug;
+		};
+		332970F2206E863C00D602B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = TeleportUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.TeleportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleport;
+			};
+			name = Release;
+		};
+		33297100206E88BB00D602B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = TeleportTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.TeleportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Teleport";
+			};
+			name = Debug;
+		};
+		33297101206E88BB00D602B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = TeleportTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.TeleportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Teleport";
+			};
+			name = Release;
+		};
 		3372A95D206A77EB00E3332B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +575,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		332970F3206E863C00D602B2 /* Build configuration list for PBXNativeTarget "TeleportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332970F1206E863C00D602B2 /* Debug */,
+				332970F2206E863C00D602B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332970FF206E88BB00D602B2 /* Build configuration list for PBXNativeTarget "TeleportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33297100206E88BB00D602B2 /* Debug */,
+				33297101206E88BB00D602B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3372A948206A77EB00E3332B /* Build configuration list for PBXProject "Teleport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

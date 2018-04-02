@@ -6,7 +6,7 @@
 //  Copyright © 2018 TecTec. All rights reserved.
 //
 
-struct Stop {
+struct Stop: Codable {
 
     init(name: String, latitude: Double, longitude: Double, address: String, isAvailable: Bool = true) {
 

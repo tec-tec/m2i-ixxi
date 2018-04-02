@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lineNumberTextField: UITextField!
     @IBOutlet weak var addStopButton: UIButton!
     @IBOutlet weak var capacityTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
 
     //MARK: - Public vars
 
@@ -28,6 +29,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         configureUI()
+
+        let session = URLSession.shared
+        let url = URL(string: "https://www.apple.com/v/home/do/images/heroes/iphone-x/iphone_x_large_2x.jpg")!
+        let task = session.dataTask(with: url) { (data, response, error) in
+
+            if error != nil {
+                return
+            }
+
+            if let data = data, let image = UIImage(data: data) {
+
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
+
+        }
+        task.resume()
+
     }
 
     //MARK: - Actions

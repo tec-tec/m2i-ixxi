@@ -6,7 +6,7 @@
 //  Copyright © 2018 TecTec. All rights reserved.
 //
 
-struct Line {
+struct Line: Codable {
 
     let number: Int
     let name: String
